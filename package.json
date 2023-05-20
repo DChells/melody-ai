@@ -6,10 +6,27 @@
     "start": "next start"
   },
   "dependencies": {
+    "abcjs": "^6.2.2",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.3",
+    "midi-player-js": "^2.0.16",
+    "midi-writer-js": "^2.1.4",
+    "midifile": "^2.0.0",
     "next": "latest",
+    "openai": "^3.2.1",
+    "opensheetmusicdisplay": "^1.7.5",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^5.3.5"
+    "reactronica": "^0.8.1-canary.0",
+    "soundfont-player": "^0.12.0",
+    "styled-components": "^5.3.5",
+    "tonal": "^4.14.1",
+    "tone": "^14.7.77",
+    "vexflow": "^4.1.0",
+    "vextab": "^3.0.6",
+    "webmidi": "^3.1.5",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
