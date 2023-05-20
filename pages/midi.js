@@ -34,7 +34,7 @@ const MyPage = () => {
         placeholder="Enter song title"
       />
       <div>
-        <button className={styles.button} onClick={handlePlayMidi}>Play MIDI</button>
+        <button className={styles.button} onClick={handlePlayMidi}>Generate</button>
         <button className={styles.button} onClick={handleRefresh}>Refresh</button>
       </div>
       <h2>Example</h2>

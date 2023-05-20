@@ -4,7 +4,7 @@ import { Configuration, OpenAIApi } from 'openai';
 import styles from './vex.module.css';
 import Link from 'next/link';
 
-const apiKey = "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";
+const apiKey = "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";
 const configuration = new Configuration({
     apiKey: apiKey,
 });
