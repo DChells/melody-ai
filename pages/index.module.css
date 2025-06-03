@@ -39,6 +39,11 @@
 }
 
 .list-item p {
-  margin-top: 5px; 
-  font-size: 18px; 
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.intro {
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
