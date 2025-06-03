@@ -3,7 +3,7 @@ import Vex from "vexflow";
 
 const VF = Vex.Flow;
 
-const MusicSheet = ({ notes, darkMode }) => {
+const MusicSheet = ({ notes, darkMode, zoom = 1 }) => {
   const divRef = useRef();
 
   useEffect(() => {
@@ -14,8 +14,9 @@ const MusicSheet = ({ notes, darkMode }) => {
     divRef.current.innerHTML = '';
 
     const renderer = new VF.Renderer(divRef.current, VF.Renderer.Backends.SVG);
-    renderer.resize('100%', 200);
+    renderer.resize(rendererWidth * zoom, 200 * zoom);
     const context = renderer.getContext();
+    context.scale(zoom, zoom);
     context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed");
 
     let startX = 10;
@@ -47,7 +48,7 @@ const MusicSheet = ({ notes, darkMode }) => {
         VF.Formatter.FormatAndDraw(context, stave, vexNotes);
       }
     }
-  }, [notes, darkMode]);
+  }, [notes, darkMode, zoom]);
   
 
   return <div ref={divRef} />;
